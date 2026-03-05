@@ -1,0 +1,26 @@
+# Cortex Agent Cost Analyzer
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Snowflake connection configs
+snowflake.yml.local
+*.toml
+!pyproject.toml
+.streamlit/secrets.toml

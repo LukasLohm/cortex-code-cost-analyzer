@@ -1,0 +1,30 @@
+# Cortex Thread Cost Analyzer - Snowflake Deployment
+#
+# This snowflake.yml is pre-configured for easy deployment.
+# Users only need to update the database/schema if deploying to a different location.
+#
+# IMPORTANT: Before deploying, ensure you have:
+# 1. ACCOUNTADMIN role or access to SNOWFLAKE.ACCOUNT_USAGE schema
+# 2. A warehouse configured (update query_warehouse below)
+#
+# Deploy with: snow streamlit deploy --replace
+
+definition_version: 2
+entities:
+  cortex_thread_cost_analyzer:
+    type: streamlit
+    identifier:
+      # UPDATE THESE VALUES for your account:
+      name: CORTEX_THREAD_COST_ANALYZER
+      database: AGENT_COST_ANALYSIS     # Change to your database
+      schema: APP                        # Change to your schema
+    
+    # UPDATE THIS to your warehouse:
+    query_warehouse: COMPUTE_WH
+    
+    # Entry point
+    main_file: streamlit_app.py
+    
+    # Files to deploy - include ALL files needed by the app
+    artifacts:
+      - streamlit_app.py
