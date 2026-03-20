@@ -1,4 +1,4 @@
-# Cortex Agent Cost Analyzer
+# Cortex Code Cost Analyzer
 
 # Ignore Python cache
 __pycache__/
@@ -24,3 +24,6 @@ snowflake.yml.local
 *.toml
 !pyproject.toml
 .streamlit/secrets.toml
+
+# Ignore build output
+output/

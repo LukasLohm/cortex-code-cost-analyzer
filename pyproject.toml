@@ -1,7 +1,7 @@
 [project]
-name = "cortex-thread-cost-analyzer"
+name = "cortex-code-cost-analyzer"
 version = "1.0.0"
-description = "Streamlit app to analyze Cortex Code CLI thread costs"
+description = "Streamlit app to analyze Cortex Code CLI credit consumption"
 requires-python = ">=3.11"
 dependencies = [
     "snowflake-connector-python>=3.3.0",
