@@ -1,5 +1,7 @@
 # Cortex Code Cost Analyzer
 
+![Cortex Code Cost Analyzer](assets/Cortex_Code_Cost_analyzer.png)
+
 A Streamlit application for analyzing Snowflake Cortex Code CLI credit consumption. Track costs by user, model, token type, and time period with detailed breakdowns of input, output, cache read, and cache write tokens.
 
 ## Features
