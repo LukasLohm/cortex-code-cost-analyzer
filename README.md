@@ -78,7 +78,7 @@ Key columns:
 
 ## Notes
 
-- Cortex Code in Snowsight is currently **free of charge** — only CLI usage appears in billing
+- Cortex Code in Snowsight is until **1st of april 2026 free of charge** — only CLI usage appears in billing. This will likely change after 1st april 2026.
 - Credits come pre-calculated from Snowflake; the app derives rates from actual `CREDITS_GRANULAR / TOKENS_GRANULAR` data
 - `PARENT_REQUEST_ID` is always NULL, so the app aggregates by day/user/model rather than sessions
 - All queries use `int()` casting on the lookback days parameter to prevent SQL injection
